@@ -18,7 +18,7 @@ jobs:
           install-path: "./dev/bin"
       - run: curl https://getcomposer.org/installer | php
       - name: phpstan analyze
-        run: composer 
+        run: composer lint
   test:
     name: unit tests
     needs: [phpstan]
